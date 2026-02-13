@@ -12,7 +12,13 @@ InsightFlow is a "Private Brain" Retrieval-Augmented Generation (RAG) system eng
 * **Modular Engine Decoupling:** The system uses Python's `abc` (Abstract Base Classes) to separate the orchestration logic from specific vendor implementations, allowing for seamless transition from prototype to production.
 * **Data Sovereignty:** Full deployment within Azure Virtual Networks (VNet) to ensure no data leakage to public endpoints.
 
-## 3. Implementation Roadmap
+## 3. System Architecture
+*(System architecture diagram illustrating the split-screen verification UI and the backend orchestration layer.)*
+
+![System Architecture](./docs/architecture/architecture-diagram.png)
+
+
+## 4. Implementation Roadmap
 We follow a progressive deployment strategy to ensure engineering excellence and security compliance:
 
 | Phase | Engine Type | Goal | Status |
@@ -21,7 +27,7 @@ We follow a progressive deployment strategy to ensure engineering excellence and
 | **Phase 1** | **Headless API** | Decoupling Frontend from Dify orchestration using a Factory Pattern. | **In Progress** |
 | **Phase 2** | **Azure Native** | Full migration to Azure AI Search & Azure OpenAI within Private VNet. | **Target: Q2 2026** |
 
-## 4. Technical Architecture: The Modular Engine
+## 5. Technical Architecture: The Modular Engine
 The core of InsightFlow is the `BaseRAGEngine` abstraction. This ensures the system remains "Future-Proof."
 
 ```python
@@ -46,7 +52,7 @@ class BaseRAGEngine(ABC):
 
 - AzureNativeEngine: Scheduled for Phase 2. This will replace the sandbox with a customized, multi-tenant vector store following my Azure Solutions Architect (AZ-305) certification.
 
-## 5. Directory Structure
+## 6. Directory Structure
 ```
 ## 5. Directory Structure
 
@@ -66,7 +72,7 @@ class BaseRAGEngine(ABC):
 ```
 
 
-## 6. Personal Milestone
+## 7. Personal Milestone
 I am currently deep-diving into the Microsoft Azure ecosystem to bridge the gap between AI research and enterprise-level infrastructure.
 
 - Target February 2026: Azure AI Engineer Associate (AI-102)
