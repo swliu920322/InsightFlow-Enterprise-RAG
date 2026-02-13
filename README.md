@@ -4,8 +4,6 @@
 [![Azure: Deployed](https://img.shields.io/badge/Azure-Deployed-0078D4.svg)]()
 [![Python: 3.13](https://img.shields.io/badge/Python-3.13-3776AB.svg)]()
 
-> **Notice:** This repository contains the architectural blueprint and structural scaffolding for **InsightFlow**. Core business logic and proprietary citation algorithms are currently maintained in a private repository for academic review (NTU Global Connect Fellowship Capstone).
-
 ## 1. Project Overview
 InsightFlow is a "Private Brain" Retrieval-Augmented Generation (RAG) system engineered for the FinTech and GovTech sectors. It solves the critical "Hallucination" and "Data Sovereignty" trade-offs inherent in standard LLM deployments.
 
