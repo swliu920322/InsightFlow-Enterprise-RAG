@@ -31,6 +31,15 @@ InsightFlow is a "Private Brain" Retrieval-Augmented Generation (RAG) system eng
 │   ├── api/               # FastAPI routing and endpoints
 │   ├── core/              # RBAC security and configurations
 │   └── services/          # Core RAG engine & Citation Mapping logic
+│   └── engines/          # Core RAG engine & Citation Mapping logic
 └── tests/                 # RAGAS evaluation metrics (Faithfulness & Relevance)
+
+Development Roadmap
+
+[] Phase 0	Mock/Dify UI	UX Validation & Citation Flow	Completed
+
+[] Phase 1	Headless Dify API	Decoupling Frontend from Orchestration	In Progress
+
+[] Phase 2	Azure Native RAG	Enterprise Compliance & Security (VNet)	Spring 2026
 
 © 2026 Shengwei Liu. Architected for Trust.
