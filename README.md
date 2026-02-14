@@ -21,11 +21,12 @@ InsightFlow is a "Private Brain" Retrieval-Augmented Generation (RAG) system eng
 ## 4. Implementation Roadmap
 We follow a progressive deployment strategy to ensure engineering excellence and security compliance:
 
-| Phase | Engine Type | Goal | Status |
-| :--- | :--- | :--- | :--- |
-| **Phase 0** | **Dify UI Sandbox** | UX Validation & Citation Anchoring Prototype. | **Completed** |
-| **Phase 1** | **Headless API** | Decoupling Frontend from Dify orchestration using a Factory Pattern. | **In Progress** |
-| **Phase 2** | **Azure Native** | Full migration to Azure AI Search & Azure OpenAI within Private VNet. | **Target: Q2 2026** |
+| Phase       | Engine Type | Goal                                                                                                                                                                      | Status              |
+|:------------| :--- |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------|
+| **Phase 0** | **Dify UI Sandbox** | UX Validation & Citation Anchoring Prototype.                                                                                                                             | **Completed**       |
+| **Phase 1** | **Headless API** | Decoupling Frontend from Dify orchestration using a Factory Pattern.                                                                                                      | **In Progress**     |
+| **Phase 2** | **Azure Native** | Full migration to Azure AI Search & Azure OpenAI within Private VNet.                                                                                                     | **Target: Q2 2026** |
+| **Phase 3** | **Multi-Cloud Ready** | Leveraging Terraform for provider-agnostic deployment. Planned integration with GCP Vertex AI as a secondary LLM provider for ultra-long context processing (1M+ tokens). | **Target: Q3 2026** |
 
 ## 5. Technical Architecture: The Modular Engine
 The core of InsightFlow is the `BaseRAGEngine` abstraction. This ensures the system remains "Future-Proof."
